@@ -1,0 +1,123 @@
+.image-selection {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.image-option {
+  cursor: pointer;
+}
+
+.image-thumbnail {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  border: 2px solid transparent;
+}
+
+.image-thumbnail.selected {
+  border-color: blue; /* Highlight selected image */
+}
+
+.create-event-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create-event-container h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .create-event-container input,
+  .create-event-container textarea {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 96%;
+  }
+  
+  .create-event-container button {
+    background-color: black;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .create-event-container button:hover {
+    background-color: #474b50;
+  }
+  /* General Mobile View */
+@media (max-width: 768px) {
+  .create-event-container {
+    max-width: 100%;
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .create-event-container input,
+  .create-event-container textarea {
+    padding: 10px;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+
+  .create-event-container button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .image-thumbnail {
+    width: 80px; /* Smaller thumbnails for mobile */
+    height: 80px;
+  }
+}
+
+/* For Small Tablets and Larger Phones */
+@media (max-width: 576px) {
+  .create-event-container h2 {
+    font-size: 1.5rem; /* Reduce heading size */
+  }
+
+  .image-selection {
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+    justify-content: center;
+  }
+
+  .image-thumbnail {
+    width: 70px; /* Even smaller thumbnails */
+    height: 70px;
+  }
+}
+
+/* For Very Small Screens */
+@media (max-width: 400px) {
+  .create-event-container {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .create-event-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .create-event-container input,
+  .create-event-container textarea {
+    font-size: 14px;
+  }
+
+  .create-event-container button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .image-thumbnail {
+    width: 60px;
+    height: 60px;
+  }
+}

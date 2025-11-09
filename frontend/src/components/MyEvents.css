@@ -1,0 +1,134 @@
+.my-events-container {
+    padding: 20px;
+    max-width: 100%;
+    margin: 10%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 4%;
+  }
+  
+  .event-card {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .event-image-container {
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .event-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .event-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .event-content p {
+    margin: 5px 0;
+    color: #353535;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+  }
+
+  .rcenter{
+    text-align: center;
+  }
+  
+
+  /* General Tablet and Mobile View */
+@media (max-width: 768px) {
+  .my-events-container {
+    margin: 5%;
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .event-card {
+    flex-direction: column; /* Stack content vertically */
+    gap: 10px; /* Reduce spacing between elements */
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .event-image-container {
+    width: 100%; /* Make the image container full-width */
+    height: 150px; /* Reduce height for smaller screens */
+  }
+
+  .event-content {
+    text-align: center; /* Center-align content for better readability */
+  }
+
+  .event-content p {
+    font-size: 16px; /* Reduce font size */
+  }
+
+  .error-message {
+    font-size: 14px; /* Adjust error message font size */
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 576px) {
+  .my-events-container {
+    margin: 3%;
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .event-card {
+    padding: 10px;
+  }
+
+  .event-image-container {
+    height: 120px; /* Further reduce height for smaller screens */
+  }
+
+  .event-content p {
+    font-size: 14px; /* Smaller font size for compact screens */
+  }
+
+  .error-message {
+    font-size: 12px; /* Adjust error message font size */
+  }
+}
+
+/* Very Small Screens (Phones < 400px) */
+@media (max-width: 400px) {
+  .my-events-container {
+    margin: 2%;
+    padding: 8px;
+  }
+
+  .event-card {
+    padding: 8px;
+  }
+
+  .event-image-container {
+    height: 100px; /* Keep the image smaller for very small screens */
+  }
+
+  .event-content p {
+    font-size: 12px; /* Reduce font size further */
+  }
+
+  .error-message {
+    font-size: 10px; /* Adjust error message font size */
+  }
+}
