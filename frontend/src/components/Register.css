@@ -1,0 +1,340 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black; /* Updated for consistency with index.css */
+}
+
+.register-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.register-form h2 {
+  text-align: center;
+  color: #333; /* Consistent with index.css headings */
+  margin-bottom: 20px;
+}
+
+.register-form input,
+.register-form select {
+  width: 100%; /* Adjusted to ensure full responsiveness */
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.register-form input:focus,
+.register-form select:focus {
+  border-color: #007BFF; /* Highlight on focus */
+}
+
+.register-form input.error,
+.register-form select.error {
+  border-color: red; /* Red border for error fields */
+  background-color: #ffe6e6; /* Light red background for visibility */
+}
+
+.field-error {
+  color: red;
+  font-size: 12px;
+  margin-top: -8px;
+  margin-bottom: 10px;
+  text-align: left; /* Align error messages with input fields */
+}
+
+.register-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  margin-top: 5%;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.register-form button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Popup Container */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Popup Content */
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 80%;
+}
+
+/* Popup Buttons */
+.popup-content button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.popup-content button:hover {
+  background-color: #0056b3;
+}
+
+/* General styling (already provided) */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .register-container {
+    padding: 20px;
+    height: auto; /* Adjust height for smaller screens */
+    align-items: flex-start; /* Align content at the top */
+  }
+
+  .register-form {
+    padding: 20px; /* Reduce padding */
+    border-radius: 6px; /* Slightly smaller border radius */
+    width: 100%; /* Ensure form spans full width */
+  }
+
+  .register-form h2 {
+    font-size: 20px; /* Reduce font size for headings */
+    margin-bottom: 15px;
+  }
+
+  .register-form input,
+  .register-form select {
+    padding: 10px; /* Reduce padding for input fields */
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .register-form button {
+    padding: 10px; /* Reduce button padding */
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .popup-content {
+    padding: 15px; /* Adjust padding for popups */
+    width: 90%; /* Ensure popups fit within screen width */
+    font-size: 14px; /* Reduce text size for popup content */
+  }
+
+  .popup-content button {
+    padding: 8px 16px; /* Smaller buttons in popup */
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-form {
+    padding: 15px; /* Further reduce padding */
+    border-radius: 5px; /* Smaller border radius */
+  }
+
+  .register-form h2 {
+    font-size: 18px; /* Further reduce heading font size */
+    margin-bottom: 10px;
+  }
+
+  .register-form input,
+  .register-form select {
+    padding: 8px; /* Smaller padding for inputs */
+    font-size: 12px; /* Smaller font size */
+  }
+
+  .register-form button {
+    padding: 8px; /* Smaller button size */
+    font-size: 14px;
+  }
+
+  .popup-content {
+    padding: 10px; /* Smaller padding for popups */
+    width: 95%; /* Ensure it fits even smaller screens */
+    font-size: 12px; /* Adjust text size for popup */
+  }
+
+  .popup-content button {
+    padding: 6px 12px; /* Smaller buttons in popup */
+    font-size: 12px;
+  }
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .register-container {
+    padding: 10px; /* Ensure padding on smaller screens */
+    height: auto; /* Allow the height to adjust dynamically */
+    align-items: flex-start; /* Align content towards the top */
+  }
+
+  .register-form {
+    padding: 20px; /* Reduce padding for better fit */
+    max-width: 90%; /* Ensure form adjusts to smaller widths */
+    border-radius: 8px;
+  }
+
+  .register-form h2 {
+    font-size: 20px; /* Adjust font size for headings */
+    margin-bottom: 15px; /* Reduce margin below heading */
+  }
+
+  .register-form input,
+  .register-form select {
+    padding: 10px; /* Reduce padding */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .register-form button {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .popup-content {
+    padding: 20px; /* Adjust popup padding */
+    width: 90%; /* Make popups fit smaller screens */
+    font-size: 14px;
+  }
+
+  .popup-content button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 576px) {
+  .register-container {
+    padding: 10px;
+    height: auto;
+  }
+
+  .register-form {
+    padding: 15px; /* Reduce padding further */
+    max-width: 100%; /* Full width for compact screens */
+  }
+
+  .register-form h2 {
+    font-size: 18px;
+    margin-bottom: 10px; /* Reduce spacing */
+  }
+
+  .register-form input,
+  .register-form select {
+    padding: 8px;
+    font-size: 12px; /* Smaller font size for compact screens */
+  }
+
+  .register-form button {
+    font-size: 14px;
+    padding: 8px; /* Adjust button padding */
+  }
+
+  .popup-content {
+    padding: 15px; /* Adjust popup padding */
+    width: 95%; /* Fit to screen width */
+    font-size: 12px;
+  }
+
+  .popup-content button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+/* Very Small Screens (Phones < 400px) */
+@media (max-width: 400px) {
+  .register-form {
+    padding: 10px; /* Minimal padding for very small screens */
+    border-radius: 5px;
+  }
+
+  .register-form h2 {
+    font-size: 16px; /* Smallest heading size */
+    margin-bottom: 8px; /* Further reduce margin */
+  }
+
+  .register-form input,
+  .register-form select {
+    padding: 6px;
+    font-size: 11px;
+  }
+
+  .register-form button {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .popup-content {
+    padding: 10px; /* Smallest padding for popup */
+    width: 100%; /* Use full width */
+    font-size: 11px;
+  }
+
+  .popup-content button {
+    padding: 6px 10px; /* Smallest button size */
+    font-size: 11px;
+  }
+}
+
+/* Landscape View on Tablets and Phones */
+@media (max-height: 500px) and (max-width: 768px) {
+  .register-container {
+    height: auto; /* Allow content to adjust height */
+    padding: 15px; /* Add padding for landscape */
+  }
+
+  .register-form {
+    max-width: 90%; /* Adjust width for landscape */
+    padding: 15px;
+  }
+
+  .register-form h2 {
+    font-size: 18px; /* Adjust font size for landscape */
+  }
+
+  .register-form input,
+  .register-form select {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .register-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+

@@ -1,0 +1,168 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  .login-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding-bottom: 100px;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: 700;
+    margin-top: 0%;
+  }
+  
+  .login-form input {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: -webkit-fill-available;
+  }
+  
+  .login-form button {
+    width: -webkit-fill-available;
+    padding: 12px;
+    font-size: 18px;
+    background-color: black;
+    align-items: center;
+    margin-top: 5%;
+  }
+  
+  .login-form button:hover {
+    background-color: #32363b;
+  }
+  
+  .login-form img {
+    height: 100px;
+    width: auto;
+    align-items: center;
+    margin-left: 23%;
+  }
+
+  .register-button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #0056b3; /* Darker blue */
+  }
+
+  /* General Tablet and Mobile View */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 20px;
+    height: auto; /* Allow the height to adjust dynamically */
+  }
+
+  .login-form {
+    padding: 30px; /* Reduce padding for smaller screens */
+    max-width: 400px; /* Adjust max width */
+    border-radius: 20px; /* Slightly smaller border radius */
+  }
+
+  .login-form h2 {
+    font-size: 1.8rem; /* Adjust heading size */
+    margin-bottom: 15px;
+  }
+
+  .login-form input {
+    padding: 10px; /* Reduce input padding */
+    font-size: 16px; /* Adjust input font size */
+  }
+
+  .login-form button,
+  .register-button {
+    font-size: 16px; /* Adjust button font size */
+    padding: 10px; /* Reduce button padding */
+  }
+
+  .login-form img {
+    height: 80px; /* Reduce logo size */
+    margin-left: 18%; /* Center align for smaller screens */
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 576px) {
+  .login-container {
+    padding: 10px; /* Add some padding for very small screens */
+  }
+
+  .login-form {
+    padding: 20px; /* Further reduce padding */
+    max-width: 300px; /* Narrower form for compact screens */
+  }
+
+  .login-form h2 {
+    font-size: 1.5rem; /* Smaller heading size */
+  }
+
+  .login-form input {
+    font-size: 14px; /* Smaller font for inputs */
+  }
+
+  .login-form button,
+  .register-button {
+    font-size: 14px; /* Smaller font for buttons */
+    padding: 8px; /* Further reduce button padding */
+  }
+
+  .login-form img {
+    height: 60px; /* Further reduce logo size */
+    margin-left: 15%; /* Adjust logo alignment */
+  }
+}
+
+/* Very Small Screens (Phones < 400px) */
+@media (max-width: 400px) {
+  .login-container {
+    padding: 5px;
+  }
+
+  .login-form {
+    padding: 15px; /* Minimal padding for very small screens */
+    max-width: 90%; /* Use almost full width of the screen */
+  }
+
+  .login-form h2 {
+    font-size: 1.2rem; /* Further reduce heading size */
+  }
+
+  .login-form input {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .login-form button,
+  .register-button {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .login-form img {
+    height: 50px; /* Smallest logo size */
+    margin-left: 10%; /* Adjust alignment */
+  }
+}

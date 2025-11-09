@@ -1,0 +1,185 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: -webkit-fill-available;
+    background-color: white;
+    padding: 10px 20px;
+    color: white;
+    height: 60px;
+  }
+  
+  .navbar-logo img {
+    height: 100px;
+    width: auto;
+  }
+  
+  .navbar-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .navbar-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar-logout {
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logout:hover {
+    color: #ff4d4d;
+  }
+  
+  .navbar-logout svg {
+    margin-left: 10px;
+  }
+  
+  .navbar-auth {
+    display: flex;
+    gap: 20px;
+}
+
+.auth-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.login-button {
+    background-color: #01080f;
+    color: white;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.register-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.register-button:hover {
+    background-color: #218838;
+}
+
+
+
+/* General Tablet and Mobile View */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack the navbar items vertically */
+    height: auto; /* Adjust height dynamically */
+    padding: 10px; /* Reduce padding */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .navbar-logo img {
+    height: 80px; /* Reduce logo size */
+  }
+
+  .navbar-links {
+    flex-direction: column; /* Stack links vertically */
+    gap: 15px; /* Adjust gap for smaller screens */
+    width: 100%; /* Make links take full width */
+    align-items: flex-start;
+  }
+
+  .navbar-links a {
+    font-size: 16px; /* Reduce font size */
+  }
+
+  .navbar-auth {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Adjust gap for better spacing */
+    width: 100%; /* Ensure buttons span full width */
+    align-items: flex-start;
+  }
+
+  .auth-button {
+    width: 100%; /* Full-width buttons */
+    font-size: 14px; /* Reduce font size for buttons */
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 5px; /* Further reduce padding */
+  }
+
+  .navbar-logo img {
+    height: 60px; /* Smaller logo size */
+  }
+
+  .navbar-links {
+    gap: 10px; /* Reduce gap between links */
+  }
+
+  .navbar-links a {
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .navbar-auth {
+    gap: 8px; /* Reduce gap between buttons */
+  }
+
+  .auth-button {
+    padding: 6px 12px; /* Smaller padding for buttons */
+    font-size: 12px; /* Smaller font size */
+  }
+}
+
+/* Very Small Screens (Phones < 400px) */
+@media (max-width: 400px) {
+  .navbar {
+    padding: 5px 0; /* Minimal padding */
+  }
+
+  .navbar-logo img {
+    height: 50px; /* Smallest logo size */
+  }
+
+  .navbar-links a {
+    font-size: 12px; /* Smallest font size */
+  }
+
+  .auth-button {
+    padding: 5px 10px; /* Minimal padding for buttons */
+    font-size: 10px; /* Smallest font size */
+  }
+}
+
+/* Landscape View on Tablets and Phones */
+@media (max-height: 500px) and (max-width: 768px) {
+  .navbar {
+    flex-direction: row; /* Restore horizontal alignment */
+    flex-wrap: wrap; /* Allow wrapping for better use of horizontal space */
+    justify-content: space-between; /* Adjust spacing */
+  }
+
+  .navbar-links {
+    flex-wrap: wrap; /* Allow links to wrap to the next line */
+    gap: 10px; /* Adjust gap for wrapping */
+  }
+
+  .auth-button {
+    font-size: 14px;
+  }
+}

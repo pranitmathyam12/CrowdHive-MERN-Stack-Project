@@ -1,0 +1,77 @@
+.private-route-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .private-route-message {
+    padding: 20px;
+    background-color: #ffcccc;
+    color: #cc0000;
+    border: 1px solid #cc0000;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .private-route-message a {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+  .private-route-message a:hover {
+    text-decoration: underline;
+  }
+  
+
+  /* General Tablet and Mobile View */
+@media (max-width: 768px) {
+  .private-route-container {
+    padding: 20px; /* Add padding for smaller screens */
+    height: auto; /* Allow height to adjust dynamically */
+  }
+
+  .private-route-message {
+    padding: 15px; /* Reduce padding for smaller screens */
+    font-size: 16px; /* Adjust font size */
+    border-radius: 4px; /* Slightly smaller border radius */
+  }
+
+  .private-route-message a {
+    font-size: 14px; /* Reduce font size for links */
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 576px) {
+  .private-route-container {
+    padding: 15px;
+  }
+
+  .private-route-message {
+    padding: 10px; /* Further reduce padding */
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .private-route-message a {
+    font-size: 12px; /* Smaller font size for links */
+  }
+}
+
+/* Very Small Screens (Phones < 400px) */
+@media (max-width: 400px) {
+  .private-route-container {
+    padding: 10px;
+  }
+
+  .private-route-message {
+    padding: 8px; /* Minimal padding for very small screens */
+    font-size: 12px; /* Smallest font size */
+  }
+
+  .private-route-message a {
+    font-size: 11px; /* Smallest font size for links */
+  }
+}

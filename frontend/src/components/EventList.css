@@ -1,0 +1,238 @@
+/* Container styling */
+.event-list-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Heading styling */
+.event-list-container h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Individual event card styling */
+.event-card {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+}
+
+/* Image container and image styling */
+.event-image-container {
+  width: 50%; /* Set the width of the image */
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Text content styling */
+.event-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-content p {
+  margin: 5px 0; /* Adjust spacing between lines */
+  color: #555;
+}
+
+/* Event card button styling */
+.event-card button {
+  margin: 0;
+  margin-top: 10px;
+  background-color: #0056b3;
+  padding: 10px 15px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.event-card button:hover {
+  background-color: #004494;
+}
+
+/* New ribbon styling */
+.new-ribbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom-right-radius: 10px;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.event-content p {
+  margin: 5px 0; /* Adjust spacing between lines */
+  color: #555;
+  font-size: 18px; /* Increase the font size (adjust this value as needed) */
+}
+
+.textdecor{
+  text-decoration: none;
+  color: inherit; /* Inherit the text color from the event-card */
+  display: block;
+}
+
+.white{
+  color: white;
+}
+
+
+/* General Tablet and Mobile View */
+@media (max-width: 768px) {
+  .event-list-container {
+    padding: 20px 10px;
+    max-width: 100%;
+  }
+
+  .event-list-container h2 {
+    font-size: 1.8rem; /* Adjust heading size */
+    margin-bottom: 20px;
+  }
+
+  .event-card {
+    flex-direction: column; /* Stack content vertically */
+    gap: 10px;
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .event-image-container {
+    width: 100%; /* Make image container take full width */
+    height: 150px; /* Reduce height for smaller screens */
+  }
+
+  .event-content {
+    text-align: center; /* Center-align text for a better mobile experience */
+  }
+
+  .event-content p {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .event-card button {
+    width: 100%; /* Full-width buttons on mobile */
+    font-size: 14px; /* Adjust font size */
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
+
+  .new-ribbon {
+    font-size: 12px; /* Smaller font for the ribbon */
+    padding: 3px 8px; /* Adjust padding */
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 576px) {
+  .event-list-container {
+    padding: 15px 5px;
+  }
+
+  .event-card {
+    padding: 10px;
+  }
+
+  .event-image-container {
+    height: 120px; /* Further reduce image height */
+  }
+
+  .event-content p {
+    font-size: 14px; /* Smaller font size for compact screens */
+  }
+
+  .event-card button {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .new-ribbon {
+    font-size: 10px;
+  }
+}
+
+/* For Landscape View on Tablets and Phones */
+@media (max-height: 500px) and (max-width: 768px) {
+  .event-list-container {
+    padding: 15px;
+  }
+
+  .event-card {
+    padding: 12px;
+  }
+
+  .event-image-container {
+    height: 140px; /* Adjust height for landscape orientation */
+  }
+
+  .event-content p {
+    font-size: 15px;
+  }
+
+  .event-card button {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .new-ribbon {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}
+
+/* Very Small Screens (Phones < 400px) */
+@media (max-width: 400px) {
+  .event-list-container {
+    padding: 10px;
+  }
+
+  .event-card {
+    padding: 8px;
+  }
+
+  .event-image-container {
+    height: 100px; /* Further reduce image height */
+  }
+
+  .event-content p {
+    font-size: 12px; /* Smaller font size for very small screens */
+  }
+
+  .event-card button {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .new-ribbon {
+    font-size: 9px;
+    padding: 2px 6px;
+  }
+}
